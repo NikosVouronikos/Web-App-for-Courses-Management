@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title>Register Student</title>
+</head>
+
+<body>
+	
+	<div class="container">
+	
+		<h3>Students Directory</h3>
+		<hr>
+		
+		<p class="h4 mb-4">Save Student </p>
+	
+		<form action="#" th:action="@{/courses/studentAddSuccess}"
+						 th:object="${studentobj}" method = "POST">
+		
+			<!-- Add hidden form field to handle update -->
+			<input type="hidden" th:field="*{id}" />
+			
+			<input type="text" th:field="*{am}"
+					class="form-control mb-4 col-4" placeholder="Registration Number">
+			
+			<input type="text" th:field="*{studentname}"
+					class="form-control mb-4 col-4" placeholder="Student Full Name">
+
+			<input type="text" th:field="*{yearofreg}"
+					class="form-control mb-4 col-4" placeholder="Year of Registration">
+
+			<input type="text" th:field="*{currsemester}"
+					class="form-control mb-4 col-4" placeholder="Current Semester">
+					
+			<button type="submit" class="btn btn-info col-2">Save</button>
+						
+		</form>
+	
+		<hr>
+		<form>
+			<input type="button" value="Back to Student Registrations" onclick="history.go(-1)" style="border-radius: 4px; cursor:pointer; background-color:blue; border-color:blue; color:white">
+		</form>
+		
+	</div>
+</body>
+
+</html>

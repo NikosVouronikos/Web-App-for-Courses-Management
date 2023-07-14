@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+		<style>
+			h1 {text-align: center;}
+			div {text-align: center;}
+			input[type=submit]{
+			  background-color: #04AA6D;
+			  border: none;
+			  color: blue;
+			  padding: 8px 16px;
+			  text-decoration: none;
+			  margin: 6px 2px;
+			  cursor: pointer;
+			}
+</style>
+        <title>Login Page</title>
+    </head>
+    <body>
+		<h1><b>Instructor Account Login</b></h1>
+		<br>
+        <form th:action="@{/login}" method="post">
+            <div><label> Username: <input type="text" name="username"/> </label></div>
+			<br>
+            <div><label> Password : <input type="password" name="password"/> </label></div>
+			<br>
+			<hr>
+            <div><input type="submit" value="Sign In"/></div>
+        </form>
+    </body>
+</html>

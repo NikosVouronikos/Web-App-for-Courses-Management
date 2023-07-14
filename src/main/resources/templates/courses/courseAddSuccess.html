@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<title>Successful Addition</title>
+
+</head>
+<body>
+<div class="container" style="text-align:center">
+	<br>
+    <h1>Course Addition Done</h1>
+    <br>
+    <hr>
+    <span>Course Name : </span><b><span th:text="${courseobj.coursename}"></span></b><br/>
+	<br>
+    <span>Semester : </span><b><span th:text="${courseobj.semester}"></span></b><br/>
+	<br>
+    <span>Period : </span><b><span th:text="${courseobj.period}"></span></b><br/>
+	<br>
+    <span>ECTS : </span><b><span th:text="${courseobj.ects}"></span></b><br/>
+	<br>
+    <span>Type : </span><b><span th:text="${courseobj.ctype}"></span></b><br/>
+	<br>
+    <span>Project Percentage : </span><b><span th:text="${courseobj.projectper}"></span></b><br/>
+	<br>
+    <span>Exam Percentage : </span><b><span th:text="${courseobj.examper}"></span></b><br/>
+    <hr>
+    <br>
+    
+    <form>
+			<input type="button" value="Back to Course Directory" onclick="history.go(-2)" style="border-radius: 4px; cursor:pointer; background-color:blue; border-color:blue; color:white">
+	</form>
+</div>
+</body>
+</html>

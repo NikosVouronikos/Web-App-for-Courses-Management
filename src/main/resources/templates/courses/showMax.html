@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<title>Maximum Grade Calculation</title>
+
+</head>
+<body>
+<div class="container" style="text-align:center">
+	<br>
+    <h2><center>Maximum Grade</center></h2>
+    <br>
+    <hr>
+    <span>Max Grade : </span><b><span th:text="${course.maximum}"></span></b><br/>
+    <hr>
+    <br> 
+    <form>
+	<div style="text-align:center">  
+		<input type="button" value="Back to Statistics Menu" onclick="history.go(-1)" 
+			style="border-radius: 4px; cursor:pointer; background-color:blue; border-color:blue; color:white">
+	</div>
+	</form>
+    
+</div>
+
+
+</body>
+</html>
