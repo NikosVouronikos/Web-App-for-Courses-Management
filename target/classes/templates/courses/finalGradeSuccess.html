@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<br>
+<title>Final Grade</title>
+
+</head>
+<body>
+<div class="container" style="text-align:center">
+    <h2>Final Grade Calculation Done</h2>
+    <br>
+    <hr>
+    <span>Project Grade : </span><b><span th:text="${studentobj.projectgrade}"></span></b><br/>
+	<br>
+    <span>Exam Grade : </span><b><span th:text="${studentobj.examgrade}"></span></b><br/>
+	<br>
+    <span>Final Grade : </span><b><span th:text="${studentobj.finalgrade}"></span></b><br/>
+    <hr>
+    <br> 
+    <form>
+		<input type="button" value="Back to Student Registrations" onclick="history.go(-2)" style="border-radius: 4px; cursor:pointer; background-color:blue; border-color:blue; color:white">
+	</form>
+</div>
+</body>
+</html>

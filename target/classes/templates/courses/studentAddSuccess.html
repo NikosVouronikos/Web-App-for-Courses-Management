@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<title>Successful Addition</title>
+
+</head>
+<body>
+<div class="container" style="text-align:center">
+	<br>
+    <h2>Student Registration Done</h2>
+    <br>
+    <hr>
+	<span>Registration Number : </span><b><span th:text="${studentobj.am}"></span></b><br/>
+	<br>
+    <span>Student Full Name : </span><b><span th:text="${studentobj.studentname}"></span></b><br/>
+	<br>
+    <span>Year of Registration : </span><b><span th:text="${studentobj.yearofreg}"></span></b><br/>
+	<br>
+    <span>Current Semester : </span><b><span th:text="${studentobj.currsemester}"></span></b><br/>
+    <hr>
+    <br> 
+    <form>
+		<input type="button" value="Back to Student Registrations" onclick="history.go(-2)" style="border-radius: 4px; cursor:pointer; background-color:blue; border-color:blue; color:white">
+	</form>
+</div>
+</body>
+</html>

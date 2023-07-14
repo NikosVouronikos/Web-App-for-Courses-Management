@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<title>Stats Utilities</title>
+
+</head>
+<body>
+	<br>
+    <h2><center><b>Statistics - Utilities</b></center></h2>
+    <hr>
+	<center>
+    <a th:href="@{/courses/maxgrade}"
+		class="btn btn-primary btn-sm mb-2"
+		style = "align:center">
+		<abbr	
+			style = "text-decoration : none;cursor : pointer";
+			title = "Shows maximum grade of selected category">
+			Max Grade
+		</abbr>
+	</a>
+						
+	<a th:href="@{/courses/mingrade}"
+		class="btn btn-primary btn-sm mb-2"
+		style = "align:center">
+		<abbr	
+			style = "text-decoration : none;cursor : pointer";
+			title = "Shows minimum grade of selected category">
+			Min Grade
+		</abbr>
+	</a>
+	<!-- Add a button -->
+	<a th:href="@{/courses/mean}"
+		class="btn btn-primary btn-sm mb-2"
+		style = "align:center">
+		<abbr	
+			style = "text-decoration : none;cursor : pointer";
+			title = "Shows mean grade of selected category">
+			Mean Grade
+		</abbr>
+	</a>
+	<a th:href="@{/courses/median}"
+		class="btn btn-primary btn-sm mb-2"
+		style = "align:center">
+		<abbr	
+			style = "text-decoration : none;cursor : pointer";
+			title = "Shows median grade of selected category">
+			Median Grade
+		</abbr>
+	</a>
+	<br>
+	<a th:href="@{/courses/sdev}"
+		class="btn btn-danger btn-sm mb-2"
+		style = "align:center">
+		<abbr	
+			style = "text-decoration : none;cursor : pointer";
+			title = "Shows standard deviation of grades">
+			Standard Deviation
+		</abbr>
+	</a>
+	<a th:href="@{/courses/variance}"
+		class="btn btn-danger btn-sm mb-2"
+		style = "align:center">
+		<abbr	
+			style = "text-decoration : none;cursor : pointer";
+			title = "Shows variance of grades">
+			Variance
+		</abbr>
+	</a>
+	<a th:href="@{/courses/successpercentage}"
+		class="btn btn-danger btn-sm mb-2"
+		style = "align:center">
+		<abbr	
+			style = "text-decoration : none;cursor : pointer";
+			title = "Shows the percentage of success for the selected category">
+			Success Percentage
+		</abbr>
+	</a>
+	<br>
+	<a th:href="@{/courses/skewness}"
+		class="btn btn-warning btn-sm mb-2"
+		style = "align:center">
+		<abbr	
+			style = "text-decoration : none;cursor : pointer";
+			title = "Shows skewness of selected category">
+			Skewness
+		</abbr>
+	</a>
+	<a th:href="@{/courses/kurtosis}"
+		class="btn btn-warning btn-sm mb-2"
+		style = "align:center">
+		<abbr	
+			style = "text-decoration : none;cursor : pointer";
+			title = "Shows kurtosis of selected category">
+			Kurtosis
+		</abbr>
+	</a>
+	</center>
+	<hr>
+	<form>
+	<div style="text-align:center">  
+		<input type="button" value="Back to Students Managment" onclick="history.go(-1)" 
+			style="border-radius: 4px; cursor:pointer; background-color:blue; border-color:blue; color:white">
+	</div>
+	</form>
+</body>
+</html>
